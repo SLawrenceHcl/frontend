@@ -1,0 +1,126 @@
+
+
+/* selectors grab element from html and style it
+3 types of selector
+1. element selectory grabs by tag name*/
+/* h1{
+  background-color: blue;
+}
+h2{
+  background-color: rebeccapurple;
+} */
+body{
+  background-color:brown;
+}
+
+table, th, td {
+    border: 2px solid;
+  }
+
+table{
+    /* color: white; */
+    background-color: white;
+    border: 5px solid;
+    width: 50%;
+
+}
+
+/* 2. class selector goes by class name  "." = class prefix     
+classes can be used multiple times
+*/
+/* overwrote this example at line 109 */
+.aclass{  
+  color: yellow;  
+}
+
+/* 3. ID selector goes by id  "#" = id prefix 
+should use for only a single items stylization
+should only be used once*/
+#someId{
+  background-color: aquamarine;
+}
+
+
+/* order of precedence inline style attribute > id > class > element */
+
+/* psudo selectors */
+h2:hover{
+  background-color: chocolate;
+}
+
+li:first-child{
+  color: red;
+}
+li:last-child{
+  color: white;
+}
+li:nth-child(2){
+  color: chartreuse;
+}
+li:only-child{
+  color: purple;
+}
+
+/* more psudo selectorts */
+#google-link:link{
+  color: blue;
+}
+#google-link:visited{
+  color: red;
+}
+/* for all element a followed by element b */
+/* li is overwritten by ul > li selector */
+li +li{
+  color: rgb(255, 200, 200);  
+}
+a + a{
+  color:yellow;
+}
+
+/* for all element a followed by element b must have same parent */
+textarea ~ button{
+  color: pink;
+  background-color: black;
+  
+}
+
+/* all children of a single element */
+/* for all li inside a ul */
+ul > li{
+  color: blue;
+}
+ul li{
+  color: forestgreen;
+}
+/* source attribute begins with this value */
+img[src^="../image"] {
+  border: 10px solid black;
+}
+/* source attribute ends with this value */
+img[src$="../image"] {
+  border: 10px solid black;
+}
+/* source attribute contains it anywhere */
+img[src*="../image"] {
+  border: 10px solid black;
+}
+
+/* class attribute separated by whitespace */
+h1[class~=class2] {
+  background-color: green;
+}
+
+h1[class|=class2]{
+  background-color: cornflowerblue;
+}
+
+/* selectors all above
+
+
+
+
+
+
+____________________________________________________________________________________________________
+*/
+
