@@ -54,4 +54,182 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* font-family: 'Times New Roman', Times, serif;  default*/
     /* font-family: monospace; even spacing */
+} 
+
+#image-hcl{
+    height: 200px;
+    width: 40%; /*60% is about same as 60vw both are relative units based on device*/
+    /* border: size style color; */
+    /* border: 10px dashed black; */
+    /* border: 10px dotted black; */
+    border: 10px double black;
+    /* border: 10px solid black; */
+    /* background-color: greenyellow; */
+    /* padding: 20px; */
+    /* padding: 100px 50px 100px 50px; */
+    padding: 100px 50px;
+    /* margin: 100px 0px 100px 20px; */
+
+/* can shift image main properties are left and right*/
+    float: right; 
+    /* other properties include inherit which copies parents float property
+        none= default keeps item in its place(not the same as display none but 
+        instead leaves it where it would naturally occur
+    */
+
+
+}
+
+.table-display{
+    
+    /* changes the display property of an element that it naturally comes with */
+    /* display: none; */
+    display:inline-block;
+}
+
+.container{
+    background: white;
+    /* width: 50%; */
+    height: 300px;
+    margin: 30px;
+
+    /* below are properties we can add to a flex container */
+
+    /* makes container as flex container */
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column-reverse; */
+
+
+    /* flex-wrap: wrap; */
+
+    justify-content: center;
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+
+
+    align-items: center;
+    /* align-items: stretch; */
+
+    /* no matter the size will keep objects on same baseline*/
+    /* align-items: baseline; */
+}
+
+.container-item{
+    background: green;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    line-height: 50px;
+    /* height: 50px; */
+
+    /* properties we can use on items themselves
+    see html container div block
+    */
+
+
+    justify-content: center;
+
+}
+
+.grid-container{
+    background: white;
+    margin: 30px;
+    height: 500px;
+    display: grid;
+    /* grid-template-columns: 10px 50px 10px;
+    grid-template-rows: 50px 250px; */
+    /* grid-template-columns: auto 100px; */
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    /* row-gap: 300px;
+    column-gap: 100px; */
+    /* gap: 300px 100px; */
+
+
+        /* justify-content: start;
+    justify-content: end;
+    justify-content: center; */
+    /* justify-content: space-evenly; */
+
+    /* justify-content: space-around; */
+
+    
+    /* align-content: space-between; */
+    /* align-content: end; */
+
+
+
+
+}
+.grid-item{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.submit-button{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background: blue;
+    border: none;
+    padding: 10px 15px;
+
+    /* transition: property time transitionStyle delay 
+    can add multiple properties separated by comma
+    delay not required            
+    transition styles ease : most common linear : uncommon      ease-in-out  eases in then out
+    
+    
+    */
+
+
+        /* shift x y */
+        /* transform: translate(10px, -10px); */
+
+        /* scale pass in decimal value  2.5 will size up by 2.5
+        be very careful using this*/
+        /* transform: scale(2.5);   */
+
+        /* rotation properties */
+        /* transform: rotate(-15deg); */
+        /* transform: skewX(65deg); */
+        /* transform: skewY(20deg); */
+
+        /* 1 = 45degrees? 2= 65? */
+        /* transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY); */
+        /* transform: matrix(1, 0, 2, 1, 0, 0); */
+        /* transform: matrix(); */
+
+
+    transition: padding, background 300ms ease;
+    /* transition: all 500ms ease; */
+
+    /* browser support prefix -add all prefixes for maximum browser support*/
+    -webkit-transition: padding, background 500ms ease; /* chrome and safari*/
+    /* -moz-   mozilla */
+    /* -o-      opera  */
+}
+
+.submit-button:hover{
+    background: lightblue;
+    padding: 20px 30px;
+
+
+
+
+
+}
+.submit-button:active{
+    background: black;
+    padding: 40px 60px;
 }
