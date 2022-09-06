@@ -1,0 +1,154 @@
+body{
+    background: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.website{
+    background: white;
+    /* margin: 30px; */
+    height: 50px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px auto auto;
+    /* justify-content: center; */
+}
+.nav-bar-left{
+    /* background: red; */
+    /* margin: 30px; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.nav-bar-right{
+    grid-area: 1 / 3 / span 1 / span 1;
+    /* background: blue; */
+    /* margin: 30px; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-bar-item{
+    
+    width: 100px;
+    /* line-height: 50px; */
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    line-height: 25px;
+    margin: 10px;
+    /* padding: 0px 0px 25px 0px; */
+}
+
+.nav-bar-button{
+    background: rgb(70, 70, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+#google-logo{
+    display: block;
+    height: auto;
+    width: 25%;
+    /* grid-area: 2 / 2 / span 1 / span 1; */
+    /* float:right; */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background: rgb(255, 238, 206); */
+
+    /* background: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"); */
+}
+
+#search-bar{
+    background: green;
+}
+
+li{
+    list-style: none;
+  }
+
+.hamburger{
+    /* overflow: hidden;
+    background-color: #333;
+    position: relative; */
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.hamburger .nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* left: -100%; */
+
+}
+.hamburger .nav-branding{
+    font-size: 2rem;
+}
+
+.hamburger .nav-link{
+    transition: 0.7s ease;
+}
+.hamburger .nav-link:hover{
+    color: dodgerblue;
+}
+
+/* 
+
+
+.hamburger a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+.hamburger a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+
+  .hamb {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  /* @media(max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+  } */
+ 
