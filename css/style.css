@@ -233,3 +233,40 @@ body{
     background: black;
     padding: 40px 60px;
 }
+
+
+#about-me{
+    /* animation-name: red-to-black; */
+    /* animation-duration: 4s; */
+    /* ease ease-in ease in out */
+    /* animation-timing-function: linear; */
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: 2; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: normal; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+    animation: red-to-black 4s linear 0s infinite alternate forwards;
+}
+
+@keyframes red-to-black {
+    /* from{
+        background: red;
+        transform: translate(0px, 0px);
+    }
+    to{
+        background: black;
+        transform: translate(20px, 20px);
+    } */
+
+    /* sample{} */
+    0% {background: red;
+        transform: translate(0px, 0px);}
+    50% {background: yellow;
+        transform: translate(10px, 10px);}
+    100% {background: black;
+        color: red;
+        transform: translate(20px, 20px);}
+}
