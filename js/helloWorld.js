@@ -23,3 +23,22 @@ function hamburger() {
       x.style.display = "block";
     }
   }
+
+  function myFunction() {
+    var x = document.getElementById("nav-links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  function hamburger2(){
+    var x = document.getElementById("list-two");
+    if(x.style.display === "block"){
+      x.style.display = "none";
+    }
+    else{
+      x.style.display = "block"
+    }
+  }
