@@ -34,7 +34,7 @@ function hamburger() {
   }
 
   function hamburger2(){
-    var x = document.getElementById("list-two");
+    var x = document.getElementById("list");
     if(x.style.display === "block"){
       x.style.display = "none";
     }

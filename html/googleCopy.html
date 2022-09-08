@@ -44,46 +44,52 @@
                 <div class="bar"></div>
             </div>  
 
-            <button class="nav-bar-button" onclick="alertButton()"
-
-            >Sign in</button>
+            <button class="nav-bar-button" onclick="alertButton()">Sign in</button>
         </div>
     </div>
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-    id="google-logo">
+    <div>
+        <ul id="list" class="hamburger-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">TestPage</a></li>
+          </ul>
+    </div>
+    <!-- <div class="google-logo-container"> -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        id="google-logo">
+    <!-- </div> -->
     <!-- <div id="search-bar">search
 
     </div> -->
-    <nav class="hamburger">
-        <a href="#" class="nav-home">Home</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#news" class="nav-link">News</a>
-            </li>  
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li> 
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        </ul>
-        <!-- <a href="#hamburger-button" class="hamb" onsubmit="alertButton()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a> -->
-        <a href="javascript:void(0);" class="icon-two" onclick="hamburger2()">
-            <i class="fa fa-bars"></i>
+    <div id="search-container">
+        <form onsubmit="alertButton()">
+            <input type="text" class="search-bar"></input>
+            <button type="submit" id="search-norm" class="search-button">Submit1</button>
+            <button id="search-lucky" class="search-button">Submit2</button>
+        </form>
+        <!-- <textarea name="comment" form="usrform">Enter text here...</textarea> -->
 
-          </a>
+    </div>
 
-    </nav>
+    <!-- <div id="grid-container">
+        <div id="one-grid"class="grid-item" style="background: rgb(162, 25, 35);">1</div>
+        <div class="grid-item" style="background: rgb(27, 41, 120);">2</div>
+        <div class="grid-item" style="background: rgb(255, 96, 192);">3</div>
+        <div class="grid-item" style="background: rgb(255, 221, 0);">4</div>
+        <div class="grid-item" style="background: rgb(140, 255, 0);">5</div>
+        <div class="grid-item" style="background: rgb(58, 255, 216);">6</div>
+    </div> -->
+
+
+    <!-- <button class="nav-bar-button" onclick="alertButton()">Sign in</button> -->
 
 
 
-    <section class="top-nav">
+
+    <!-- <section class="top-nav">
         <ul id="list-two" class="hamburger-menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
@@ -91,8 +97,8 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">TestPage</a></li>
-        </ul>
-      </section>
+        </ul> -->
+      <!-- </section> -->
 
 </body>
 </html>
