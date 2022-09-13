@@ -5,33 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage</title>
-    <link rel="stylesheet" type="text/css" href="../css/webStyle.css">  
+    <link rel="stylesheet" type="text/css" href="../css/webStyle.css">
+    <script src="../js/helloWorld.js"></script>
 </head>
 <body>
+    <div class="body-1">
+        <div id="hcl">
+            <img id="hcl-image" src="../image/image-hcl.png">
+        </div>
+        <!-- p>lorem10 -->
+        <!-- <p class="p1">Lorem, ipsum.</p> -->
+        <!-- <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias.</p> -->
+    </div>
     <div id="header">
         <div class="nav-bar">
             <a class="nav-links" href="#">Home</a>
             <a class="nav-links" href="#">Resume</a>
             <div class="nav-right">
-                <div id="nav-right-drop-down">
-                    <a class="nav-links" href="#">Projects</a>
-                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                      <a href="#">Project 1</a>
+                      <a href="#">Project 2</a>
+                      <a href="C:\Users\stephen.lawrence\OneDrive - HCL Technologies Ltd\Desktop\code\frontend\html\googleCopy.html">Project 3</a>
+                    </div>
+                  </div>
             </div>
             <!-- <a class="nav-links" href="#">Contact</a> -->
         </div>
     </div>
-    
-    <div id="body-1">
-        <h1 id="twenty-two">
+
+    <!-- <div id="body-1">
+        <h1 class="twenty-two">
             22
         </h1>
-    </div>
-    <div id="body-2">
+    </div> -->
 
-    </div>
+    <!-- <div id="body-2">
+
+        <div class="container">
+            <h1 id="twenty-two">
+                22
+            </h1>
+            <div class="container-item" style="order: 3; 
+            flex-grow: 1;
+            flex-shrink: 3;
+            flex-basis: 100px;
+    
+            /* align self can only use flex-start, flex-end, and center */
+            align-self: flex-end;
+            ">A</div>
+            <div class="container-item" style="order: 4; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            ">B</div>
+            <div class="container-item" style="order: 5;
+            flex-grow: 5;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            align-self:flex-start;
+            ">C</div>
+            <div class="container-item" style="order: 1; 
+            /* flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100px;
+            flex: grow shrink basis;
+            /* shorthand _________________________________________________________________________________________________*/
+            flex: 1 1 100px;
+            align-self: flex-start;
+            ">D</div>
+            <div class="container-item" style="order: 2; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            ">E</div>
+            
+        </div>
+    </div> -->
     <div id="body-3">
-
+        <div>
+            <h2>About me</h2>
+            <p id="Ab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, tempora!</p>
+        </div>
     </div>
+    <div class="tic-tac-container">
+        <div id="tic-tac-1" class="tic-tac-block">1</div>
+        <div id="tic-tac-2" class="tic-tac-block">2</div>
+        <div id="tic-tac-3" class="tic-tac-block">3<div>
+        <div id="tic-tac-4" class="tic-tac-block">4</div>
+        <div id="tic-tac-5" class="tic-tac-block">5</div>
+        <div id="tic-tac-6" class="tic-tac-block">6</div>
+        <div id="tic-tac-7" class="tic-tac-block">7</div>
+        <div id="tic-tac-8" class="tic-tac-block">8</div>
+        <div id="tic-tac-9" class="tic-tac-block">9</div>
+    </div>
+
+    
+
     <footer id="footer">
 
     </footer>

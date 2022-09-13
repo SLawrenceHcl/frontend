@@ -2,6 +2,7 @@ body{
     background: white;
     min-width: 100px;
     min-height: 10px;
+
 }
 a{
     text-decoration: none;
@@ -61,13 +62,14 @@ a{
 }
 .middle-page{
     grid-area: 3 / 2 / span 1 / span 1;
-    margin: 30% auto;
+    margin: auto auto;
     /* display: grid;
     justify-content: center;
     align-items: center; */
 }
 
 .google-logo-container{
+
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -76,16 +78,16 @@ a{
     margin-top: auto;
 }
 #google-logo{
-    display:inline-block;
+    display:block;
 
     /* width: 275px; */
     /* padding: 10px 0px; */
 
-    /* position: relative; */
+    position: relative;
     margin-left: 50%; 
     margin-right: 50%;
 
-    /* width: auto; */
+    width: 25%;
     
     /* display: flex;
     justify-content: center;

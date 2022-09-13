@@ -42,3 +42,14 @@ function hamburger() {
       x.style.display = "block"
     }
   }
+
+  function displayProjects(){
+    // alert("Sign in prompt");
+    var x = document.getElementById("projects");
+    if(x.style.display === "block"){
+      x.style.display = "none";
+    }
+    else{
+      x.style.display = "block"
+    }
+  }
