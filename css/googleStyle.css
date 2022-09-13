@@ -1,5 +1,7 @@
 body{
     background: white;
+    min-width: 100px;
+    min-height: 10px;
 }
 a{
     text-decoration: none;
@@ -12,7 +14,7 @@ a{
     /* flex-direction: row; */
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 50px 200px auto;
+    grid-template-rows: 50px auto auto;
     /* justify-content: center; */
 }
 .nav-bar-left{
@@ -57,20 +59,41 @@ a{
     margin: 10px;
     cursor: pointer;
 }
+.middle-page{
+    grid-area: 3 / 2 / span 1 / span 1;
+    margin: 30% auto;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+}
 
-/* .google-logo-container{
-    text-align: center;
-    position: relative;
-} */
+.google-logo-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    margin-top: auto;
+}
 #google-logo{
     display:inline-block;
-    height: auto;
-    width: 275px;
-    padding: 10px 0px;
+
+    /* width: 275px; */
+    /* padding: 10px 0px; */
 
     /* position: relative; */
-    margin-left: 40%; 
-    margin-right: auto;
+    margin-left: 50%; 
+    margin-right: 50%;
+
+    /* width: auto; */
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    flex: grow shrink basis; */
 
 
     /* background: rgb(255, 238, 206); */
@@ -142,30 +165,47 @@ li{
     height: 500px;
     display: grid;
     /* grid-template-areas: 3 2; */
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
-
+.search-bar-container{
+    width: auto;
+    /* background: teal; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search-bar{
-    /* display: flexbox; */
-    grid-area: 1 / 1 / span 1 / span 2;
+    grid-area: 1 / 2 / span 1 / span 1;
     background: white;
     border: 1px solid gray;
     border-radius: 50px;
     height: 40px;
     width: 575px;
-    margin: 1% 25%;  
+    margin: 1% auto;  
     
 }
-.search-button{
+.search-bar:focus{
+    outline: none;
+}
+.search-button-container{
+    width: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.search-button{
+    border: none;
     /* display: block; */
     cursor: pointer;
-    background: white;
+    background: rgb(230, 230, 230);
     width: 200px;
-    /* padding: auto; */
-    margin: 10px 100px;
+    height: 25px;
+    padding: auto;
+    margin: 0px 20px;
 }
 #search-norm{
     grid-area: 2 / 2 / span 1 / span 1;
@@ -175,9 +215,10 @@ li{
 }
 
 #grid-container{
-    background: white;
+    background: teal;
     margin: 30px;
     height: 500px;
+    width: auto;
     display: grid;
 
     grid-template-columns: auto auto auto;
@@ -198,6 +239,11 @@ li{
 }
 #one-grid{
     grid-area: 1 / 1 / span 1 / span 3;
+    background-color: blue;
+    width: auto;
     /* margin: auto; */
-    margin: 0% 45%;
+    /* margin: 0% 45%; */
+      display: flex;
+  justify-content: center;
+  align-items: center;
 }
