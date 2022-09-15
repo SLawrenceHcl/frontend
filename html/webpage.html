@@ -26,7 +26,7 @@
                     <button class="dropbtn">Projects</button>
                     <div class="dropdown-content">
                       <a href="#">Project 1</a>
-                      <a href="#">Project 2</a>
+                      <a href="#tic-tac-toe">Project 2</a>
                       <a href="../html/googleCopy.html">Project 3</a>
                     </div>
                   </div>
@@ -101,9 +101,9 @@
     </div> -->
 
     <div>
-        <button onclick="reset()">
-            Start/Reset Game
-        </button>
+        <a id="tic-tac-button" onclick="reset()" href="#tic-tac-toe">
+            Start/Reset TikTacToe
+        </a>
         <div id="player-container">
             <h1 id="player1">
                 Player 1's Turn
@@ -111,18 +111,28 @@
             <h1 id="player2">
                 Player 2's Turn
             </h1>
+            <h1 id="winner-1">
+                Player 1 is the winner
+            </h1>
+            <h1 id="winner-2">
+                Player 2 is the winner
+            </h1>
         </div>
     </div>
-    <div class="tic-tac-container">
-        <div id="tic-tac-1" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-2" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-3" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-4" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-5" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-6" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-7" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-8" class="tic-tac-block" onclick="toggle(this.id)"></div>
-        <div id="tic-tac-9" class="tic-tac-block" onclick="toggle(this.id)"></div>
+    <div id="tic-tac-toe">
+        <div id="tic-tac-hidden">
+            <div class="tic-tac-container">
+                <div id="tic-tac-0" class="tic-tac-block" onclick="toggle(this.id, 0, 0)"></div>
+                <div id="tic-tac-1" class="tic-tac-block" onclick="toggle(this.id, 0, 1)"></div>
+                <div id="tic-tac-2" class="tic-tac-block" onclick="toggle(this.id, 0, 2)"></div>
+                <div id="tic-tac-3" class="tic-tac-block" onclick="toggle(this.id, 1, 0)"></div>
+                <div id="tic-tac-4" class="tic-tac-block" onclick="toggle(this.id, 1, 1)"></div>
+                <div id="tic-tac-5" class="tic-tac-block" onclick="toggle(this.id, 1, 2)"></div>
+                <div id="tic-tac-6" class="tic-tac-block" onclick="toggle(this.id, 2, 0)"></div>
+                <div id="tic-tac-7" class="tic-tac-block" onclick="toggle(this.id, 2, 1)"></div>
+                <div id="tic-tac-8" class="tic-tac-block" onclick="toggle(this.id, 2, 2)"></div>
+            </div>
+        </div>
     </div>
     <br>
     <!-- <div style="width: 100%; background: black;">
@@ -136,6 +146,9 @@
         </div>
     </div> -->
 
+    <div>
+        <h1 id="spooky">Spooky</h1>
+    </div>
 
     <footer id="footer">
 
