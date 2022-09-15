@@ -114,12 +114,12 @@
     /* shorthand */
         /* grid-area: rowStart / colStart / rowEnd / colEnd */
         
-        grid-area: 1 / 1 / span 2 / span 2;
+        grid-area: 1 / 1 / span 2 / span 1;
 
         ">1</div>
         <div class="grid-item" style="background: rgb(27, 41, 120);">2</div>
         <div class="grid-item" style="background: rgb(255, 96, 192);">3</div>
-        <div class="grid-item" style="background: rgb(255, 221, 0);">4</div>
+        <div class="grid-item" style="background: rgb(255, 221, 0);grid-area: 3 / 1 / span 1 / span 2;">4</div>
         <div class="grid-item" style="background: rgb(140, 255, 0);">5</div>
         <div class="grid-item" style="background: rgb(58, 255, 216);">6</div>
     </div>
@@ -128,14 +128,14 @@
         <input type="text" placeholder="FirstName">
         <button class="submit-button">Submit</button>
     </form>
-<br>
-<br>
-    <h2 id="about-me">
-        About me
-    </h2>
     <br>
     <br>
-<br>
+        <h2 id="about-me">
+            About me
+        </h2>
+        <br>
+        <br>
+    <br>
 
 </body>
 </html>

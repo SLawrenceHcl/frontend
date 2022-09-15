@@ -53,3 +53,44 @@ function hamburger() {
       x.style.display = "block"
     }
   }
+
+  var player = 1;
+
+  function toggle(id){
+    var x = document.getElementById(id);
+    // alert(id);
+    
+    // alert(x.style.background);
+    // if(x.style.background === "blue"){
+    //   x.style.background = "red";
+    // }
+    // else{
+    //   x.style.background = "blue";
+    // }
+    if(player === 1){
+      x.style.background = "blue";
+      player = 2;
+    }
+    else{
+      x.style.background = "red";
+      player = 1;
+    }
+    togglePlayerDisplay();
+  }
+  function reset(){
+    player = 1;
+    var x = document.getElementById("player1");
+    x.style.display = "block"
+    x = document.getElementById("player2");
+    x.style.display = "none"
+
+    for (let i = 1; i < 10; i++) {
+      var id = "tic-tac-" + i;
+      x = document.getElementById(id);
+      x.style.background = "white";
+    }
+  }
+
+  function togglePlayerDisplay(){
+
+  }

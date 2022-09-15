@@ -27,7 +27,7 @@
                     <div class="dropdown-content">
                       <a href="#">Project 1</a>
                       <a href="#">Project 2</a>
-                      <a href="C:\Users\stephen.lawrence\OneDrive - HCL Technologies Ltd\Desktop\code\frontend\html\googleCopy.html">Project 3</a>
+                      <a href="../html/googleCopy.html">Project 3</a>
                     </div>
                   </div>
             </div>
@@ -89,19 +89,53 @@
             <p id="Ab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, tempora!</p>
         </div>
     </div>
-    <div class="tic-tac-container">
-        <div id="tic-tac-1" class="tic-tac-block">1</div>
-        <div id="tic-tac-2" class="tic-tac-block">2</div>
-        <div id="tic-tac-3" class="tic-tac-block">3<div>
-        <div id="tic-tac-4" class="tic-tac-block">4</div>
-        <div id="tic-tac-5" class="tic-tac-block">5</div>
-        <div id="tic-tac-6" class="tic-tac-block">6</div>
-        <div id="tic-tac-7" class="tic-tac-block">7</div>
-        <div id="tic-tac-8" class="tic-tac-block">8</div>
-        <div id="tic-tac-9" class="tic-tac-block">9</div>
-    </div>
 
-    
+
+    <!-- <div class="grid-container">
+        <div class="grid-item" style="background: rgb(255, 6, 6);">1</div>
+        <div class="grid-item" style="background: rgb(27, 41, 120);">2</div>
+        <div class="grid-item" style="background: rgb(255, 96, 192);">3</div>
+        <div class="grid-item" style="background: rgb(255, 221, 0);grid-area: 3 / 1 / span 1 / span 2;">4</div>
+        <div class="grid-item" style="background: rgb(140, 255, 0);">5</div>
+        <div class="grid-item" style="background: rgb(58, 255, 216);">6</div>
+    </div> -->
+
+    <div>
+        <button onclick="reset()">
+            Start/Reset Game
+        </button>
+        <div id="player-container">
+            <h1 id="player1">
+                Player 1's Turn
+            </h1>
+            <h1 id="player2">
+                Player 2's Turn
+            </h1>
+        </div>
+    </div>
+    <div class="tic-tac-container">
+        <div id="tic-tac-1" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-2" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-3" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-4" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-5" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-6" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-7" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-8" class="tic-tac-block" onclick="toggle(this.id)"></div>
+        <div id="tic-tac-9" class="tic-tac-block" onclick="toggle(this.id)"></div>
+    </div>
+    <br>
+    <!-- <div style="width: 100%; background: black;">
+        <div class="grid-container">
+            <div class="grid-item" style="background: rgb(255, 6, 6);">1</div>
+            <div class="grid-item" style="background: rgb(27, 41, 120);">2</div>
+            <div class="grid-item" style="background: rgb(255, 96, 192);">3</div>
+            <div class="grid-item" style="background: rgb(255, 221, 0);grid-area: 3 / 1 / span 1 / span 2;">4</div>
+            <div class="grid-item" style="background: rgb(140, 255, 0);">5</div>
+            <div class="grid-item" style="background: rgb(58, 255, 216);">6</div>
+        </div>
+    </div> -->
+
 
     <footer id="footer">
 
